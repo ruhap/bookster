@@ -1,8 +1,8 @@
 import { DefaultSession, NextAuthOptions } from "next-auth";
 import DiscordProvider from "next-auth/providers/discord";
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
-import { db } from "@/lib/db";
-import { config } from "@/lib/config";
+import { db } from "./db";
+import { config } from "./config";
 
 declare module "next-auth" {
   interface Session extends DefaultSession {
