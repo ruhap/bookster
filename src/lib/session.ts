@@ -1,6 +1,6 @@
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "./auth";
 
-export async function getServerAuthStatus() {
+export const getServerAuthStatus = async () => {
   return await getServerSession(authOptions);
-}
+};
